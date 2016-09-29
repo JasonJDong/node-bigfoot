@@ -1,0 +1,23 @@
+{
+  "name": "node-bigfoot",
+  "version": "1.0.0",
+  "description": "Auto download and install wow interface addons if bigfoot client can not update.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AB"
+  ],
+  "author": "JasonDong",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.1",
+    "dateformat": "^1.0.12",
+    "node-dir": "^0.1.16",
+    "node.extend": "^1.1.6",
+    "request": "^2.75.0",
+    "request-progress": "^2.0.1",
+    "unzip": "^0.1.11"
+  }
+}
