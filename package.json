@@ -1,15 +1,19 @@
 {
   "name": "node-bigfoot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Auto download and install wow interface addons if bigfoot client can not update.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "AB"
+    "bigfoot","node-bigfoot","wow plugin"
   ],
-  "author": "JasonDong",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasonJDong/node-bigfoot.git"
+  },
+  "author": "JasonDong (amycolin@126.com)",
   "license": "MIT",
   "dependencies": {
     "async": "^2.0.1",
