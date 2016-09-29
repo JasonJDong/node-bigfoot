@@ -8,12 +8,13 @@ nodejs编写的自动更新大脚插件工具，因为bigfoot客户端总是报�
 `npm install node-bigfoot`
 
 ## Config - 配置
-` config.js`
-| 配置项  | 说明 |
-| --------   | -----:  |
-| distDir | 更新插件的位置，解压出来的文件夹为Interface |
-| downloads.dir | 下载文件的存放地址 |
-| downloads.keepArchive | 是否保留下载的压缩包 |
+` config.js` 
+
+   配置项  |                说明                     
+ :-------- | :------------------------------------
+ distDir  | 更新插件的位置，解压出来的文件夹为Interface 
+ downloads.dir | 下载文件的存放地址 
+ downloads.keepArchive | 是否保留下载的压缩包 
 
 ## Usage - 用法
 `node index.js`
