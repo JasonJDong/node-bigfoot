@@ -1,7 +1,7 @@
-var Unarchive = require('./unarchive');
-var Downloader = require('./downloader');
+var Unarchive = require('./lib/unarchive');
+var Downloader = require('./lib/downloader');
 
-var config = require('./config');
+var config = require('./lib/config');
 
 ;(function main() {
 	
