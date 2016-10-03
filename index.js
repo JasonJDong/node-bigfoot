@@ -1,9 +1,14 @@
 var Unarchive = require('./lib/unarchive');
 var Downloader = require('./lib/downloader');
+var extend = require('node.extend');
 
 var config = require('./lib/config');
 
-;(function main() {
+function start(userOpts) {
+
+	var defalutOpts = config;
+	var opts = extend(true, {}, defalutOpts, userOpts);
+	config = opts;
 	
 	var dnload = new Downloader();
 	var unzip = new Unarchive();
@@ -11,7 +16,9 @@ var config = require('./lib/config');
 	var keepArchive = config.downloads.keepArchive;
 	var backupOld = config.backupOld;
 
-	dnload.init().download();
+	dnload.init(config, function () {
+		dnload.download();
+	});
 	dnload.on('done', function (archivePath) {
 		unzip.unzip( archivePath, extractDir, {keepArchive:keepArchive, backupOld: backupOld});
 	});
@@ -24,4 +31,8 @@ var config = require('./lib/config');
 		console.log(err);
 	})
 
-})();
+}
+
+start();
+
+module.exports = this.start;
