@@ -33,6 +33,7 @@ function start(userOpts) {
 
 }
 
-start();
-
-module.exports = this.start;
+module.exports = 
+{
+	start: start
+}
