@@ -17,7 +17,8 @@ nodejs编写的自动更新大脚插件工具，因为bigfoot客户端总是报�
  downloads.keepArchive | 是否保留下载的压缩包 
 
 ## Usage - 用法
-```var bigfoot = require('node-bigfoot');
+```
+var bigfoot = require('node-bigfoot');
     bigfoot.start({
         version: "7.0.0.591",
         distDir: "./dist"，
