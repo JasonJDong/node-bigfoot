@@ -1,6 +1,6 @@
 {
   "name": "node-bigfoot",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Auto download and install wow interface addons if bigfoot client can not update.",
   "main": "index.js",
   "scripts": {
